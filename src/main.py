@@ -16,7 +16,12 @@ host = args.host
 port = args.port
 
 # Logging
-logging.basicConfig(filename="", filemode="w", level=logging.DEBUG, format=f"%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s")
+logging.basicConfig(
+    filename="",
+    filemode="w",
+    level=logging.DEBUG,
+    format=f"%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s",
+)
 
 # API
 def create_app():
@@ -28,6 +33,7 @@ def create_app():
 
     return app
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     app = create_app()
     app.run(host=host, port=port)

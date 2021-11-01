@@ -4,18 +4,44 @@ This template implements a simple API in Flask.
 
 Support following tools:
 * Linting: 
-    * [Flake8](https://flake8.pycqa.org/en/latest/):
-    * [Black](https://black.readthedocs.io/en/stable/):
-    * [Mypy](https://github.com/python/mypy):
-    * [Pre-commit](https://pre-commit.com/):  
+    * [Black](https://black.readthedocs.io/en/stable/): re-format code.
+    * [Flake8](https://flake8.pycqa.org/en/latest/): check syntax issues.
+    * [Mypy](https://github.com/python/mypy): suggest adding types to the function arguments and return types.
+    * [Pre-commit](https://pre-commit.com/): 
 * Testing: 
     * [Pytest](https://docs.pytest.org/):
-    * [Codecov](https://about.codecov.io/):  
+    * [Coverage](https://coverage.readthedocs.io/en/6.1.1/)
+    <!-- * [Codecov](https://about.codecov.io/):   -->
 * CI: 
     * [Travis-CI](https://travis-ci.org/):
     * [Github actions](https://docs.github.com/en/actions):  
 * CD: 
     * Travis
+
+## How to use
+### Linting
+* Run `black`:
+```
+black .
+```
+* Run `flake8`: 
+```
+flake8
+```
+* Run `mypy`: 
+```
+mypy .
+```
+* Init `pre-commit`: 
+```
+pre-commit install
+```
+### Testing
+```
+coverage run -m pytest
+```
+### CI
+
 
 ## Project structure:  
 .  
@@ -26,3 +52,7 @@ Support following tools:
 ### Explain:  
 * .gitignore: ignore files or folders.  
 * requirements.txt: required packages for running projects.  
+
+## Reference:
+* [https://medium.com/kaggle-blog/i-trained-a-model-what-is-next-d1ba1c560e26](https://medium.com/kaggle-blog/i-trained-a-model-what-is-next-d1ba1c560e26)
+* [https://www.earthdatascience.org/blog/unit-testing-linting-ci-python/](https://www.earthdatascience.org/blog/unit-testing-linting-ci-python/)
