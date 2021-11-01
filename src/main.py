@@ -1,10 +1,11 @@
-import os, sys
-import json
-from flask import Blueprint
-from flask import Flask, request, jsonify
-import requests
-import logging
 import argparse
+import json
+import logging
+import os
+import sys
+
+import requests
+from flask import Blueprint, Flask, jsonify, request
 
 # Config
 parser = argparse.ArgumentParser(description="Config")

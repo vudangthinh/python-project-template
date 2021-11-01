@@ -2,8 +2,9 @@ import sys
 
 sys.path.append("..")
 
-from flask import Flask
 import pytest
+from flask import Flask
+
 from src.main import create_app
 
 
