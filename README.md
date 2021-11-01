@@ -34,9 +34,14 @@ mypy .
 ```
 * Init `pre-commit`:
 ```
-# Init pre-commit
+# Install pre-commit in project
 pre-commit install
+# Uninstall pre-commit in project
+pre-commit uninstall
+# Run pre-commit hooks against all files
+pre-commit run --all-files
 ```
+
 ### Testing
 ```
 # Run pytest and coverage
@@ -44,14 +49,15 @@ coverage run -m pytest
 # View report of coverage
 coverage report
 ```
+
 ### CI
 
 
 ## Project structure:
-.
-├── .git
-├── .gitignore
-└── README.md
+.  
+├── .git  
+├── .gitignore  
+└── README.md  
 
 ### Explain:
 * .gitignore: ignore files or folders.
