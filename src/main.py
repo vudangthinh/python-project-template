@@ -7,7 +7,6 @@ import sys
 import requests
 from flask import Blueprint, Flask, jsonify, request
 
-
 # Config
 parser = argparse.ArgumentParser(description="Config")
 parser.add_argument("--host", type=str, default="0.0.0.0", help="host to service")
