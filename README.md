@@ -1,4 +1,6 @@
 # python-CI-template
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
 
 This template implements a simple API in Flask.
 
@@ -20,19 +22,19 @@ Support following tools:
 
 ## How to use
 ### Linting
-* Run `black`:
+* Use `black`:
 ```
 black .
 ```
-* Run `flake8`:
+* Use `flake8`:
 ```
 flake8
 ```
-* Run `mypy`:
+* Use `mypy`:
 ```
 mypy .
 ```
-* Init `pre-commit`:
+* Use `pre-commit`:
 ```
 # Install pre-commit in project
 pre-commit install
@@ -54,10 +56,10 @@ coverage report
 
 
 ## Project structure:
-.  
-├── .git  
-├── .gitignore  
-└── README.md  
+.
+├── .git
+├── .gitignore
+└── README.md
 
 ### Explain:
 * .gitignore: ignore files or folders.
