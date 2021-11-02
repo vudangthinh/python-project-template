@@ -14,13 +14,11 @@ Support following tools:
     * [Pytest](https://docs.pytest.org/):
     * [Coverage](https://coverage.readthedocs.io/en/6.1.1/)
     <!-- * [Codecov](https://about.codecov.io/):   -->
-* CI:
+* CI/CD:
     * [Travis-CI](https://travis-ci.org/):
     * [Github actions](https://docs.github.com/en/actions):
-* CD:
-    * Travis
 
-## How to use
+## Running linting, testing, CI/CD
 ### Linting
 * Use `black`:
 ```
@@ -52,18 +50,29 @@ coverage run -m pytest
 coverage report
 ```
 
-### CI
+### CI/CD
 
 
 ## Project structure:
-.
-├── .git
-├── .gitignore
-└── README.md
+.  
+├── .git  
+├── .gitignore  
+└── README.md  
 
 ### Explain:
 * .gitignore: ignore files or folders.
 * requirements.txt: required packages for running projects.
+
+## How to use this code base
+1. Clone this repo:
+```
+git clone https://github.com/vudangthinh/python-CI-template.git
+```
+2. Change its remote:
+```
+git remote set-url origin new.git.url
+```
+3. Start coding
 
 ## Reference:
 * [https://medium.com/kaggle-blog/i-trained-a-model-what-is-next-d1ba1c560e26](https://medium.com/kaggle-blog/i-trained-a-model-what-is-next-d1ba1c560e26)
