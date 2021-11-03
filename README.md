@@ -4,9 +4,9 @@
 
 
 
-This repo implements a simple API in Flask.
+This repo provides a code base with supporting code linting, testing, and CI/CD scripts. It allows quickly starting a new project without having to type boilerplate code.
 
-Support following tools:
+**It supports following tools:**
 * Linting:
     * [Black](https://black.readthedocs.io/en/stable/): re-format code.
     * [Flake8](https://flake8.pycqa.org/en/latest/): check syntax issues.
